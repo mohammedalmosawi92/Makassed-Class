@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/777811c730.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row form-row">
+            <div class="col-md-offset-4 col-md-4 col-sm-6 col-sm-offset-3 col-xs-12">
+                <form>
+                    <legend>Player Informations</legend>
+                    <div class="form-group">
+                        <label class="form-control-label" for="full-name">Full Name</label>
+                        <input type="text" placeholder="Full Name" class="form-control" id="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Game</label>
+                        <input type="text" placeholder="Game" class="form-control" id="game" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" placeholder="Date" class="form-control" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>High score</label>
+                        <input type="number" placeholder="High score" class="form-control" id="score" min=0 required>
+                    </div>
+                    <div class="form-group">
+                        <label class="btn btn-success">
+                            <input type="checkbox" id="check-box" autocomplete="off">
+                            <span class="glyphicon glyphicon-ok"></span> Trash Talk
+                        </label>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" value="Submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row table-margin">
+            <div class="col-md-offset-1 col-md-10 col-xs-12">
+                <div class="table-responsive table">
+                    <table class="table table-sm table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="btn"># </div>
+                                </th>
+                                <th class="name-btn">
+                                    <div class="btn">Full Name <i class="fa fa-sort" aria-hidden="true"></i></div>
+                                </th>
+                                <th class="game-btn">
+                                    <div class="btn">Game <i class="fa fa-sort" aria-hidden="true"></i></div>
+                                </th>
+                                <th class="date-btn">
+                                    <div class="btn">Date <i class="fa fa-sort" aria-hidden="true"></i></div>
+                                </th>
+                                <th class="high-score-btn">
+                                    <div class="btn">High Score <i class="fa fa-sort" aria-hidden="true"></i></div>
+                                </th>
+                                <th>
+                                    <div class="btn">Trash Talk <i class="fa fa-sort" aria-hidden="true"></i></div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

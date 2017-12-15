@@ -1,0 +1,55 @@
+body {
+    background-color: lightgrey;
+}
+
+form {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.form-control:focus {
+    background: #B2EBF2;
+}
+
+.btn span.glyphicon {
+    opacity: 0;
+}
+
+.btn.active span.glyphicon {
+    opacity: 1;
+}
+
+.table-margin {
+    margin-top: 100px;
+}
+
+thead tr {
+    background: #0091EA;
+    color: white;
+}
+
+thead .btn:hover {
+    color: black;
+}
+
+table th {
+    text-align: center;
+}
+
+table td {
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #80D8FF;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #039BE5;
+}
+
+.storage-margin {
+    margin-bottom: 10px;
+}
