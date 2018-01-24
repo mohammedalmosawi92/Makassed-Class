@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>Full Names</h1>
+    <div class="form-div">
+        <form>
+            <div class="input-div">
+                <div class="n-div">
+                    <label for="f-name">First Name:</label>
+                    <input type="text" placeholder="First Name" name="f-name" id="fname"/>
+                </div>
+                <div class="n-div">
+                    <label for="l-name">Last Name:</label>
+                    <input type="text" placeholder="Last Name" name="l-name" id="lname"/>
+                </div>
+            </div>
+            <div class="btn-div">
+                <button type="button" class="btn" onclick="submitBtn()" >Submit</button>
+            </div>
+        </form>
+        <div id="displayName" class="full-name"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
