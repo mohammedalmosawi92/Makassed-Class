@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/form.png">
+</head>
+
+<body>
+    <h1 class="header">Students Form</h1>
+    <form>
+        <div class="container">
+            <div class="container-row">
+                <label>First Name:</label>
+                <input type="text" placeholder="First Name" class="input-box" id="firstName">
+            </div>
+            <div class="container-row">
+                <label>Last Name:</label>
+                <input type="text" placeholder="Last Name" class="input-box" id="lastName">
+            </div>
+            <div class="container-row">
+                <label>Date of Birth:</label>
+                <input type="date" class="input-box date-box" id="dob">
+            </div>
+            <div class="container-row">
+                <label>Gender</label>
+                Male <input type="radio" name="gender" value="Male" class="gender">
+                Female <input type="radio" name="gender" value="Female" class="gender">
+            </div>
+            <div class="container-row">
+                <label>Subject:</label>
+                <select class="slt" id="subject">
+                    <option value="Math">Math</option>
+                    <option value="Science" selected>Science</option>
+                    <option value="Physics">Physics</option>
+                </select>
+            </div>
+            <div class="container-button-row">
+                <input type="reset" value="Reset" class="btn-reset btn">
+                <button class="btn-submit btn" id="submit" type="button" onclick="submitBtn()">Submit</button>
+            </div>
+        </div>
+    </form>
+    <table id="std-list">
+        <tr>
+            <th>Full name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Subject</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
