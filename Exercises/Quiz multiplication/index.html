@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Multiplication</title>
+</head>
+
+<body>
+    <h1>Result of Multiplication</h1>
+    <div class="form-div">
+        <form>
+            <div class="input-div">
+                <div class="n-div">
+                    <label for="f-name">First Number:</label>
+                    <input type="number" placeholder="First Number" name="f-num" id="fnum"/>
+                </div>
+                <div class="n-div">
+                    <label for="l-name">Second Number:</label>
+                    <input type="number" placeholder="Second Number" name="s-num" id="lnum"/>
+                </div>
+            </div>
+            <div class="btn-div">
+                <button type="button" class="btn" onclick="calculateBtn()" >Calculate</button>
+            </div>
+        </form>
+        <div id="displayResult" class="result"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
