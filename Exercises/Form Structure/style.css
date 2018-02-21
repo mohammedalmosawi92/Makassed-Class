@@ -100,3 +100,16 @@ label {
 * {
     box-sizing: border-box
 }
+
+table {
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    border-collapse: collapse
+}
+
+tr,td {
+    border: 1px solid black;
+    text-align: center
+}

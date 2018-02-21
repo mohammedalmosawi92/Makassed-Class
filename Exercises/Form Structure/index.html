@@ -25,15 +25,13 @@
                 <input type="date" class="input-box date-box" id="dob">
             </div>
             <div class="container-row">
-                <label>Gender</label>
-                Male <input type="radio" name="gender" value="Male" class="gender">
-                Female <input type="radio" name="gender" value="Female" class="gender">
+                <label>Gender</label> Male <input type="radio" name="gender" value="Male" class="gender"> Female <input type="radio" name="gender" value="Female" class="gender">
             </div>
             <div class="container-row">
                 <label>Subject:</label>
                 <select class="slt" id="subject">
                     <option value="Math">Math</option>
-                    <option value="Science" selected>Science</option>
+                    <option value="Science">Science</option>
                     <option value="Physics">Physics</option>
                 </select>
             </div>
@@ -43,7 +41,46 @@
             </div>
         </div>
     </form>
-    <script src="script.js"></script>
+    <table id="std-table">
+        <tr>
+            <td>
+                Full Name
+            </td>
+            <td>
+                Date of Birth
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ahamed Hasan
+            </td>
+            <td>
+                2/2/2002
+            </td>
+        </tr>
+    </table>
+    <script>
+        function submitBtn() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var dateOfBirth = document.getElementById("dob").value;
+            var fullName = firstName + " " + lastName;
+            
+            var tdFullName = document.createElement("td");
+            var tdDateOfBirth = document.createElement("td");
+            
+            tdFullName.innerHTML = fullName;
+            tdDateOfBirth.innerHTML = dateOfBirth;
+            
+            var tr = document.createElement("tr");
+            
+            tr.appendChild(tdFullName);
+            tr.appendChild(tdDateOfBirth);
+            
+            document.getElementById("std-table").appendChild(tr)
+        }
+        
+    </script>
 </body>
 
 </html>
