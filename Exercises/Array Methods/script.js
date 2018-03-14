@@ -3,8 +3,16 @@ var fruits= ["banana", "apple", "orange", "watermelon"];
 fruits.push("lemon");
 console.log(fruits);
 
-// remove the first item from the array
-fruits.splice(0,1);
+// get the length of the array
+var fruitsLength = fruits.length;
+console.log(fruits);
+
+// add the length to the start of the array
+fruits.unshift(fruitsLength);
+console.log(fruits);
+
+// sort the array
+fruits.sort();
 console.log(fruits);
 
 // find the index of the orange
@@ -15,24 +23,8 @@ console.log(orangeIndex);
 fruits.push(orangeIndex);
 console.log(fruits);
 
-// sort the array
-fruits.sort();
-console.log(fruits);
-
-// get the length of the array
-var fruitsLength = fruits.length;
-console.log(fruits);
-
-// add the length to the start of the array
-fruits.unshift(fruitsLength);
-console.log(fruits);
-
 // reverse the array
 fruits.reverse();
-console.log(fruits);
-
-// remove two items from the array starting at position 3
-fruits.splice(3,2);
 console.log(fruits);
 
 // extra credit

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Kumar One', cursive;
+}
+.first {
+    color: #C62828;
+    background-color: #FFB74D;
+    font-size: 3em;
+    font-family: 'Slackey', cursive;
+}
+.second {
+    background-color: #C62828;
+    height: 350px;
+    padding-top: 20px;
+}
+.third {
+    padding: 10px 0px;
+    color: #C62828;
+    font-size: 20px;
+    font-weight: bold;
+}
+.third .me {
+    font-family: 'Kumar One', cursive;
+    padding-bottom: 10px;
+}
+.fourth {
+    background-color: #FFAB00;
+    padding: 5px;
+}
+.fourth img {
+    width: 50px;
+}
