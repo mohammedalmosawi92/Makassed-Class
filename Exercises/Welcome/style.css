@@ -1,0 +1,20 @@
+.greeting {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.msg {
+    text-align: center
+}
+
+.img-div {
+    text-align: center
+}
+
+.img-div img {
+    width: 100px
+}
+
+.fullName {
+    color: white !important
+}
