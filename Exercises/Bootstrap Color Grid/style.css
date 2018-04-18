@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.firstgrid {
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+}
+.secondgrid {
+    background-color: darkred;
+    width: 100%;
+    height: 100px;
+}
+.thirdgird {
+    background-color: skyblue;
+    width: 100%;
+    height: 100px;
+}
+.fourthgrid1 {
+    background-color: greenyellow;
+    width: 100%;
+    height: 100px;
+}
+.fourthgrid2 {
+    background-color: saddlebrown;
+    width: 100%;
+    height: 100px;
+}
+.row {
+    margin-bottom: 20px;
+}
