@@ -1,0 +1,64 @@
+.website-title {
+    margin-bottom: 80px;
+    font-size: 45px;
+    background: red;
+    color: yellow
+}
+.char-img {
+    width: 200px;
+    height: 250px;
+}
+
+.vs-img {
+    width: 150px;
+    height: 80px;
+    margin-top: 75px;
+}
+
+body {
+    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titan One', cursive;
+}
+
+.char-name {
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: underline
+}
+
+.char-health {
+    margin-top: 15px;
+}
+
+.char-health input {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.char-hit-btn {
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 150px;
+    background: red;
+    color: yellow;
+    padding: 2px 15px;
+}
+
+footer i {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.result-div {
+    font-size: 25px;
+    color: red
+}
+
+.reset-game {
+    margin-top: 15px
+}
