@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Battle Royale</title>
+    <link rel="icon" href="joystick.png">
     <!-- Latest compiled and minified CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="images/joystick.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
@@ -20,12 +21,25 @@
 </head>
 
 <body>
-    <div class="container-full">
-        <div class="row text-center">
-            <div class="website-title">Battle Royale</div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="./index.html">Battle Royale</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html" class="pages">Home</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="container">
+    </nav>
+    
+    <div class="container game-div">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="row text-center">
@@ -42,7 +56,7 @@
                             <input type="number" class="form-control" value="10" readonly id="ryuHealth">
                         </div>
                         <div class="char-hit-btn">
-                            <button class="btn btn-primary btn-lg" onclick="ryuHit()" id="ryuHitBtn">Hit</button>
+                            <button class="btn btn-primary btn-lg" onclick="ryuHit()" id="ryuHitBtn">Press A</button>
                         </div>
                     </div>
                     
@@ -66,7 +80,7 @@
                             <input type="number" class="form-control" value="10" readonly id="kenHealth">
                         </div>
                         <div class="char-hit-btn">
-                            <button class="btn btn-danger btn-lg" onclick="kenHit()" id="kenHitBtn">Hit</button>
+                            <button class="btn btn-danger btn-lg" onclick="kenHit()" id="kenHitBtn">Press L</button>
                         </div>
                     </div>
                     
@@ -83,6 +97,7 @@
             </div>
         </div>
     </div>
+    
     <div class="container-full">
         <footer>
             <div class="row">

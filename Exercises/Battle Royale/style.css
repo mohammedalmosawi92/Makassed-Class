@@ -1,9 +1,37 @@
-.website-title {
-    margin-bottom: 80px;
-    font-size: 45px;
-    background: red;
-    color: yellow
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Slabo 27px', serif;
 }
+
+.navbar {
+    background: #C62828;
+    border-radius: 0px;
+}
+
+.navbar a {
+    color: white !important
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.pages {
+    font-size: 20px;
+    transition: all 0.75s
+}
+
+.game-div {
+    margin-top: 100px;
+}
+
+.pages:hover {
+    background: white !important;
+    color: #C62828 !important;
+}
+
 .char-img {
     width: 200px;
     height: 250px;
@@ -15,12 +43,6 @@
     margin-top: 75px;
 }
 
-body {
-    overflow-x:hidden;
-    margin: 0;
-    padding: 0;
-    font-family: 'Titan One', cursive;
-}
 
 .char-name {
     margin-top: 10px;
@@ -43,9 +65,10 @@ body {
 
 footer {
     margin-top: 150px;
-    background: red;
-    color: yellow;
+    background: #C62828;
+    color: white;
     padding: 2px 15px;
+    font-size: 18px;
 }
 
 footer i {
@@ -54,11 +77,27 @@ footer i {
     cursor: pointer
 }
 
-.result-div {
+#result {
     font-size: 25px;
-    color: red
+    font-weight: 700
+}
+
+.btn-primary {
+    background: #3E50B4
+}
+
+.btn-danger {
+    background: #C62828
 }
 
 .reset-game {
     margin-top: 15px
+}
+
+.result-p1-won {
+    color: #3E50B4
+}
+
+.result-p2-won {
+    color: #C62828;
 }
