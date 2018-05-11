@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Battle Royale</title>
+        <!-- Latest compiled and minified CSS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/joystick.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="./index.html">Battle Royale</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./index.html" class="pages">Home</a></li>
+                        <li><a href="./game.html" class="pages">Game</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container game-container">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <div class="row text-center">
+
+
+                        <div class="col-md-4">
+                            <div>
+                                <img src="./images/Ryu.png" alt="Ryu" class="char-img">
+                            </div>
+                            <div class="char-name" id="player1Name">
+                                
+                            </div>
+                            <div class="char-health">
+                                <input type="number" class="form-control" readonly id="player1Health">
+                            </div>
+                            <div class="char-hit-btn">
+                                <button class="btn btn-primary btn-lg p1btn" id="player1Btn"></button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4">
+                            <img src="./images/vs.png" alt="Vs" class="vs-img">
+                        </div>
+
+
+
+                        <div class="col-md-4">
+                            <div>
+                                <img src="./images/Ken.png" alt="Ken" class="char-img">
+                            </div>
+
+                            <div class="char-name" id="player2Name">
+                            
+                            </div>
+                            <div class="char-health">
+                                <input type="number" class="form-control" readonly id="player2Health">
+                            </div>
+                            <div class="char-hit-btn">
+                                <button class="btn btn-danger btn-lg p2btn" id="player2Btn"></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="result"></div>
+                    <div id="reset-btn-div">
+                        <button onclick="resetGame()" class="btn btn-success reset-game" id="resetGame">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <footer>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright">© 2018 Copyright: Mohammed Azeez</div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="script.js">
+
+        </script>
+    </body>
+
+</html>
